@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: minmax(175px,0.8fr) 5fr;
     height: 100vh;
 }
 
@@ -43,4 +43,11 @@ button>img {
 
 nav>div {
        padding-left: 60px;
+}
+
+.search-box {
+    width: 80%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding-left:20px;
 }
