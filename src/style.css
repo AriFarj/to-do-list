@@ -79,15 +79,31 @@ nav>div {
 
 .task-card {
     width: 80%;
-    min-height: 200px;
+    min-height: 200px;    
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
+    break-inside: avoid;
     margin: 0 auto 20px;
     padding: 0 30px 15px 30px;
-    break-inside: avoid;
-    
     border-radius: 6px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px,
         rgba(6, 24, 44, 0.65) 0px 4px 6px,
         rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.task-card  > p {
+    font-size: 20px;
+}
+
+.task-card-buttons {
+    display:flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.task-buttons {
+    padding: 10px 15px;
+border-radius: 5px;
+font-size: 16px;
 }
