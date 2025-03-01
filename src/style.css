@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: minmax(175px,0.8fr) 5fr;
+    grid-template-columns: minmax(175px, 0.8fr) 5fr;
     height: 100vh;
 }
 
@@ -35,21 +35,22 @@ button>img {
     height: 30px;
     padding-right: 15px;
     filter: invert(1);
-    
+
 }
+
 .nav-container>nav>button {
     font-weight: 700;
 }
 
 nav>div {
-       padding-left: 60px;
+    padding-left: 60px;
 }
 
 .search-box {
     width: 80%;
     font-size: 1.2rem;
     border-radius: 10px;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
 .content-container {
@@ -61,11 +62,32 @@ nav>div {
 }
 
 .todo-header {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px 0 50px;
-    width:90%;
+    width: 90%;
     border-bottom: 6px solid black;
     font-size: 1.5rem;
+}
+
+.task-container {
+    padding: 30px;
+    width: 80%;
+    column-count: 2;
+}
+
+.task-card {
+    width: 80%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+    padding: 0 30px 15px 30px;
+    break-inside: avoid;
+    
+    border-radius: 6px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
