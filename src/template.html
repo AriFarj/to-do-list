@@ -57,34 +57,37 @@
                         <button class="task-buttons">Delete</button>
                     </div>
                 </div>
+                
+            </div>
+            <div class="task-create-container">
+                <div class="task-form">
+                    <div class="new-task-header">
+                        <h2>New Task</h2>
+                    </div>
+                    <div class="input-fields">
+                        <input type='text' name="task-title" placeholder="Title">
+                        <input type="text" name="task-description" placeholder="To Do...">
+                    </div>
+                    <div class="options-container">
+                        <fieldset>
+                            <legend>Due Date</legend>
+                            <input type="date" id="due-date">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Priority</legend>
+                            <select>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
             </div>
         </div>
+      
     </div>
-    <div class="task-create-container">
-        <div class="task-form">
-            <div class="new-task-header">
-                <h2>New Task</h2>
-            </div>
-            <div class="input-fields">
-                <input type='text' name="task-title" placeholder="Title">
-                <input type="text" name="task-description" placeholder="To Do...">
-            </div>
-            <div class="options-container">
-                <fieldset>
-                    <legend>Due Date</legend>
-                    <input type="date" id="due-date">
-                </fieldset>
-                <fieldset>
-                    <legend>Priority</legend>
-                    <select>
-                        <option value="high">High</option>
-                        <option value="medium">Medium</option>
-                        <option value="low">Low</option>
-                    </select>
-                </fieldset>
-            </div>
-        </div>
-    </div>
+  
 <div class="overlay"></div>
 </body>
 
