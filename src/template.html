@@ -56,8 +56,7 @@
                         <button class="task-buttons">Complete</button>
                         <button class="task-buttons">Delete</button>
                     </div>
-                </div>
-                
+                </div>             
             </div>
             <div class="task-create-container">
                 <div class="task-form">
@@ -69,18 +68,24 @@
                         <input type="text" name="task-description" placeholder="To Do...">
                     </div>
                     <div class="options-container">
-                        <fieldset>
-                            <legend>Due Date</legend>
-                            <input type="date" id="due-date">
-                        </fieldset>
-                        <fieldset>
-                            <legend>Priority</legend>
-                            <select>
-                                <option value="high">High</option>
-                                <option value="medium">Medium</option>
-                                <option value="low">Low</option>
-                            </select>
-                        </fieldset>
+                        <div class="fields-container">
+                            <fieldset>
+                                <legend>Due Date</legend>
+                                <input type="date" id="due-date">
+                            </fieldset>
+                            <fieldset>
+                                <legend>Priority</legend>
+                                <select>
+                                    <option value="high">High</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="low">Low</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="button-container">
+                            <button title="add task">V</button>
+                            <button title="close">X</button>
+                        </div>
                     </div>
                 </div>
             </div>
