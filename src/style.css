@@ -108,12 +108,27 @@ nav>div {
     font-size: 16px;
 }
 
-.task-create-form {
+.task-create-container {
     position: fixed;
-    top: 50%;
+    top: 25%;
     left: 50%;
     margin: auto;
     transform: translate(-50%, 50%);
     width: 40%;
-    z-index: 1;;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-task-header {
+    text-align: center;
+}
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
