@@ -79,7 +79,7 @@ nav>div {
 
 .task-card {
     width: 80%;
-    min-height: 200px;    
+    min-height: 200px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -92,18 +92,28 @@ nav>div {
         rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-.task-card  > p {
+.task-card>p {
     font-size: 20px;
 }
 
 .task-card-buttons {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     gap: 25px;
 }
 
 .task-buttons {
     padding: 10px 15px;
-border-radius: 5px;
-font-size: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.task-create-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, 50%);
+    width: 40%;
+    z-index: 1;;
 }
