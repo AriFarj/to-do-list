@@ -1,10 +1,14 @@
 import { newTask } from "./newTaskClass"
+import { overlay} from "./index"
 
 // respone to new task button
 // then build dom elements for form
 
 export function createNewForm() {
     console.log("createNewForm")
+
+    overlay.style.display = 'block';
+
     const contentContainer = document.querySelector('.content-container');
 
     const taskContainer = document.createElement('div');
