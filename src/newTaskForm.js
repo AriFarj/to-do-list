@@ -58,6 +58,8 @@ export function createNewForm() {
     const dateInput = document.createElement('input');
     dateInput.type = 'date'
     dateInput.id = 'due-date';
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.value = today;
     fieldSet1.appendChild(dateInput);
 
     const priorityLegend = document.createElement('legend');
@@ -72,11 +74,11 @@ export function createNewForm() {
     const lowPriority = document.createElement('option');
 
     highPriority.value = 'high';
-    highPriority.innerText= 'High';
+    highPriority.innerText = 'High';
     mediumPriority.value = 'medium';
-    mediumPriority.innerText= 'Medium';
+    mediumPriority.innerText = 'Medium';
     lowPriority.value = 'low';
-    lowPriority.innerText= 'Low';
+    lowPriority.innerText = 'Low';
 
     prioritySelect.appendChild(highPriority);
     prioritySelect.appendChild(mediumPriority);
@@ -88,12 +90,12 @@ export function createNewForm() {
 
     const buttonConfirm = document.createElement('button');
     buttonConfirm.title = 'add  task';
-    buttonConfirm.innerText =  'V';
+    buttonConfirm.innerText = 'V';
     buttonContainer.appendChild(buttonConfirm);
 
     const buttonClose = document.createElement('button');
     buttonClose.title = 'close';
-    buttonClose.innerText =  'X';
+    buttonClose.innerText = 'X';
     buttonContainer.appendChild(buttonClose);
 }
 
