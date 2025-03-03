@@ -183,7 +183,9 @@ input:focus {
 }
 
 .fields-container {
-    display: flex
+    display: flex;
+    padding: 16px;
+    gap: 16px;
 }
 
 .button-container {
@@ -198,3 +200,6 @@ select {
     min-width: 100px;
 }
 
+fieldset {
+    padding: 8px 16px 8px;
+}
